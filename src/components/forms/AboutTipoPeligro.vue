@@ -69,9 +69,11 @@
 </template>
 
 <script>
+
 import {
     mapGetters
 } from 'vuex';
+
 
 export default {
     name: 'AboutTipoPeligro',
@@ -85,8 +87,13 @@ export default {
         return {
             peligroYEfectosData: {},
             controlesData: {},
-            nuevoControl: {}
+            nuevoControl: {},
+            aux: null
         }
+    },
+    mounted(){
+        
+        this.$store.dispatch('fetchProducts')
     },
     computed: {
         peligro() {

@@ -1,3 +1,4 @@
+import peligrosRiesgos from '@/JsonData/peligrosRiesgosx.json'
 
 export default {
     state: {
@@ -22,6 +23,7 @@ export default {
     actions: {
         setData( {commit}, data ){
             commit('setData', data)
-        }       
+        },
+
     }
 };
