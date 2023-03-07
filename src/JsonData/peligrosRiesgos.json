@@ -1,202 +1,202 @@
 
 [
     { 
-        "title": "Mecanico", 
+        "title": "mecanico", 
         "descripcion": "Caidas mismo nivel, golpes", 
         "funteDelPeligro": "Manipulacion de herramientas de oficina,  muebles mal ubicados, transito por zonas donde hay vehiculos en movimiento", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "GOLPES, HERIDAS, TRAUMAS SUEPRFICIALES EN BRAZOS Y PIERNAS,  LESIONES EN OJOS(LESIONES CON NECESIDAD DE ATENCION MEDICA).", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SI SOLO ES DE CONOCIMIENTO DE PERSONAL DE PROCESO", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "DESARROLLAR   ACTIVIDADES DE SENSIBILIZACION PARA CONTROL DEL RIESGO Y LA GENERACION DE ACTOS INSEGUROS", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "DESARROLLAR   ACTIVIDADES DE SENSIBILIZACION PARA CONTROL DEL RIESGO Y LA GENERACION DE ACTOS INSEGUROS", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "ESTIMULAR  REPORTE  DE CONDICIONES DE PELIGRO Y EL CONTROL DE ACTOS INSEGUROS.", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Electrico", 
+        "title": "electrico", 
         "descripcion": "Descrgas electricas de baja tension", 
         "funteDelPeligro": "Baja tension, Conexiones electricas", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "TRAUMAS, HERIDAS, CONTUSIONES, QUEMADURAS, GOLPES.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SOLO ES DE CONOCIMIENTO DEL PERSONAL DEL PROCESO", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "SISTEMAS ELECTRICOS REGULADOS Y  ENTUBADOS  Y CON POLO A TIERRA.", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "SISTEMAS ELECTRICOS REGULADOS Y  ENTUBADOS  Y CON POLO A TIERRA.", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "MANTENER CONTROLES EXISTENTES.", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "REALIZAR CONTROLES DE VIGILANCIA Y CONTROL DE RIESGO . FORTALECER SEÑALIZACION Y DEMARCACION DE ADVERTENCIA DEL RIESGO.", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "MANTENER CONTROLES EXISTENTES.", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "REALIZAR CONTROLES DE VIGILANCIA Y CONTROL DE RIESGO . FORTALECER SEÑALIZACION Y DEMARCACION DE ADVERTENCIA DEL RIESGO.", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "SENSIBILIZAR  AL PERSONALSOBRE REPORTE DE CONDICIONES DE PELIGRO.", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Locativo", 
+        "title": "locativo", 
         "descripcion": "Superficies y desplazamiento, caidas mismo nivel, golpes", 
         "funteDelPeligro": "Superficies de trabajo (Pisos  desnivel)  en malas condiciones, areas de circulacion insuficiente, muebles mal ubicados", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "ESGUINCES, FRACTURAS, LUXACIONES, TRAUMAS, HERIDAS, CONTUSIONES, GOLPES.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "RETRASA LA OPERACIÓN MAS DE 6 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SOLO ES DE CONOCIMIENTO DEL PERSONAL DEL PROCESO", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "ESCALERAS CON CINTA ANTIDESLIZANTE Y PASAMANOS,  ORDEN Y ASEO, SEÑALIZACION CONDICIONES DE PELIGRO.", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "ESCALERAS CON CINTA ANTIDESLIZANTE Y PASAMANOS,  ORDEN Y ASEO, SEÑALIZACION CONDICIONES DE PELIGRO.", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "EJECUTAR  MTTO PREVENTIVO Y CORRECTIVO DE LAS INSTALACIONES (PISOS)", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": " IMPLEMENTAR PROGRAMA DE ORDEN Y ASEO.", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "EJECUTAR  MTTO PREVENTIVO Y CORRECTIVO DE LAS INSTALACIONES (PISOS)", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": " IMPLEMENTAR PROGRAMA DE ORDEN Y ASEO.", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "PROGRAMA DE CAPACITACION Y SENSIBILIZACION AL RIESGO , FORTALECIMIENTO HABITOS DE ORDEN Y LIMPIEZA, SENSIBILIZAR AL TRABJADOR EN EL REPORTE DE SITUACIONES DE PELIGRO.", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Antropico o de orden publico", 
+        "title": "antropicoODeOrdenPublico", 
         "descripcion": "Agresiones fisicas,  atraco - robos, secuestro, extorsiones, fleteo", 
         "funteDelPeligro": "Transporte por diferentes zonas de la ciudad ( reuniones laborales), condiciones de seguridad por orden público, atracos, robos, secuestros, accidentes  de transito, conflictos con personal de trabajo y clientes", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "GOLPES, FRACTURAS, CONTUSIONES, MUERTE, TRAUMAS MENTALES, ESQUIZOFRENIA, ANGUSTIA, ANSIEDAD, ESTRÉS , MUERTE.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "RETRASA LA OPERACIÓN POR MAS DE 12 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "RETRASA LA OPERACIÓN POR MAS DE 12 HORAS", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "ES DE CONOCIMIENTO DE AUTORIDADES DE CONTROL", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "CRITICO", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "CRITICO", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "EN EL PROCESO DE SELECCIÓN SE EVALUAN ANTECEDENTES JUDICIALES ", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "EN EL PROCESO DE SELECCIÓN SE EVALUAN ANTECEDENTES JUDICIALES ", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "COLABORACION DE LA POLICIA, SENSIBILIZACION PARA DENUNCIAR PERSONAS SOSPECHOSAS.", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "ESTABLECER PROTOCOLODE RIESGO PUBLICO, SENSIBILIZAR   Y CAPACITAR SOBRE RIESGO PUBLICO Y BUEN TRATO A NIVEL LABORAL E INTRAFAMILIAR. ", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "COLABORACION DE LA POLICIA, SENSIBILIZACION PARA DENUNCIAR PERSONAS SOSPECHOSAS.", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "ESTABLECER PROTOCOLODE RIESGO PUBLICO, SENSIBILIZAR   Y CAPACITAR SOBRE RIESGO PUBLICO Y BUEN TRATO A NIVEL LABORAL E INTRAFAMILIAR. ", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "DIVULGAR LOS PELIGROS PARTICULARES IDENTIFICADOS EN LA ZONA ESTABLECIENDO COMPORTAMIENTOS PREVENTIVOS. CAPACITACION EN RIESGO PUBLICO.", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Radioaciones no ionizantes", 
+        "title": "radioacionesNoIonizantes", 
         "descripcion": "", 
         "funteDelPeligro": "Radiaciones no ionizantes provenientes de lamparas fluorescentes, fotocopiadora, y computador.", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "CEFALEA, FATIGA VISUAL,  SINDROME DE OJO SECO , REACCIONES ALERGICAS, CANSANCIO.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "NO AFECTA EL DESARROLLO DE LA OPERACIÓN.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "NO AFECTA EL DESARROLLO DE LA OPERACIÓN.", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SI SOLO ES DE CONOCIMIENTO DE PERSONAL DE PROCESO", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "REALIZAN EXAMENES MEDICOS DE INGRESO (OPTOMETRIA)", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "REALIZAN EXAMENES MEDICOS DE INGRESO (OPTOMETRIA)", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "SENSIBILIZACION AUTOCUIDADO Y PREVENCION DE ENFERMEDADES VISUALES, EXAMENES DE INGRESO (OPTOMETRIA).", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "REALIZAR CONTROL MEDICO DE INGRESO Y PERIODICOS (OPTOMETRIA).", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "REALIZAR CONTROL MEDICO DE INGRESO Y PERIODICOS (OPTOMETRIA).", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "FORTALECER  JORNADAS DE SENSIBILIZACION SOBRE EL AUTOCUIDADO, LA HIGIENE Y LA PROTECCION DE ENFERMEDADES VISUALES , EXAMENES MEDICOS PERIODICOS (OPTOMETRIAS)", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Biologico", 
+        "title": "biologico", 
         "descripcion": "", 
         "funteDelPeligro": "Presencia de agentes  biologicos contaminantes (virus, bacterias) provenientes de la relacion con los compañeros Y CLIENTE.", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "INFECCIONES BACTERIANO RESPIRATORIOS O DIGESTIVOS, DERMATITIS . ENFERMEDADES LEVES CON INCAPACIDADES TEMPORALES", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "PROPAGACIÓN DE VIRUS AL PERSONAL", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "GENERA CAMBIOS OPERATIVOS, Y REDISEÑO TEMPORAL", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "GENERA CAMBIOS OPERATIVOS, Y REDISEÑO TEMPORAL", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SOLO ES DE CONOCIMIENTO DE PERSONAL DEL PROCESO", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "LEVE", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "MANTENIMIENTO DIARIO DE UNIDADES SANITARIAS.", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "MANTENIMIENTO CONDICIONES DE HIGIENE EN PUESTOS DE TRABAJO.", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "MANTENIMIENTO DIARIO DE UNIDADES SANITARIAS.", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "MANTENIMIENTO CONDICIONES DE HIGIENE EN PUESTOS DE TRABAJO.", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "MANTENER CONTROLES EXISTENTES.", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "MANTENER CONDICIONES DE HIGIENE EN PUESTOS DE TRABAJO.", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "MANTENER CONTROLES EXISTENTES.", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "MANTENER CONDICIONES DE HIGIENE EN PUESTOS DE TRABAJO.", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "DESARROLLAR JORANADAS DE SENSIBILIZACION SOBRE EL AUTOCUIDADO, LA HIGIENE Y LA PROTECCION DE ENFERMEDADES VIRALES, EVALUAR POSIBILIDAD DE REALIZAR VACUNACION CONTRA INFLUENZA ", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Biomecanico", 
+        "title": "biomecanico", 
         "descripcion": "", 
         "funteDelPeligro": "Postura sedente y vipeda prolongada sin cambio de posición, trabajo con alta carga de movimiento repetitivo en miembro superior.", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "LESIONES OSTEMUSCULARES (COLUMNA, ESPALDA, EN MIEMBRO SUPERIOR) , TENDINITIS, LUMBAGOS, HERNIA DISCAL,  ESGUINCES, LUXACIONES VARICES, AFECCIONES SISTEMA URINARIO, BURSITIS, FATIGA . LESIONES CON NECESIDAD DE INTERVENCION QUIRUGICA, ENFERMEDAD PROFESIONAL CON DISCAPACIDAD .", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "GENERA CAMBIOS OPERATIVOS Y REDISEÑO TEMPORAL, BAJO DESEMPEÑO EN LA LABOR, AUMENTO EN TASA DE ASUENTISMO Y ACCIDENTALIDAD. ABANDONO DEL CARGO, FENOMENOS DE RECARGA LABORAL ", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "GENERA CAMBIOS OPERATIVOS Y REDISEÑO TEMPORAL, BAJO DESEMPEÑO EN LA LABOR, AUMENTO EN TASA DE ASUENTISMO Y ACCIDENTALIDAD. ABANDONO DEL CARGO, FENOMENOS DE RECARGA LABORAL ", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SI SOLO ES CONOCIMIENTO DE OTROS PROCESOS DE LA EMPRESA Y EL CLIENTE", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "PERDIDA DE TIEMPO EFECTIVO DE TRABAJO, AL PAGAR POR INCAPACIDADES, SEGUROS, PERDIDA DE DINERO POR PARTE DEL TRABAJADOR EN TRAMITES Y TRANSPORTE DE LEGALIZACION", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "PERDIDA DE TIEMPO EFECTIVO DE TRABAJO, AL PAGAR POR INCAPACIDADES, SEGUROS, PERDIDA DE DINERO POR PARTE DEL TRABAJADOR EN TRAMITES Y TRANSPORTE DE LEGALIZACION", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": " DESARROLLO DE EXAMENES MEDICO OCUPACIONALES OCN ENFASIS OSTEOMUSCULAR  PARA EL CONTROL Y DETECCION DE ALTERACIONES.  CAPACITACION PAUSAS ACTIVAS.", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": " DESARROLLO DE EXAMENES MEDICO OCUPACIONALES OCN ENFASIS OSTEOMUSCULAR  PARA EL CONTROL Y DETECCION DE ALTERACIONES.  CAPACITACION PAUSAS ACTIVAS.", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": " MIRAR LA POSIBILIDAD DE REALIZAR ADECUACIONES EN EL PUESTO DE TRABAJO (ESCRITORIO ) YMANTENIMIENTO PREVENTIVO Y CORRECTIVO EN CUANTO A SILLETERIA (SOPORTE LUMBAR, SISTEMAS DE AJUSTE,  ESTABILIDAD Y COJINERIA)", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "INSTAURAR SVE PARA PREVENCION DE DESORDENES MUSCULOESQUELETICOS,  Y EVALUAR L POSIBILIDAD DE REALIZAR ADECUACIONES A LOS PUESTOS DE TRABAJO PARA MINIZAR EL RIESGO.  ", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": " MIRAR LA POSIBILIDAD DE REALIZAR ADECUACIONES EN EL PUESTO DE TRABAJO (ESCRITORIO ) YMANTENIMIENTO PREVENTIVO Y CORRECTIVO EN CUANTO A SILLETERIA (SOPORTE LUMBAR, SISTEMAS DE AJUSTE,  ESTABILIDAD Y COJINERIA)", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "INSTAURAR SVE PARA PREVENCION DE DESORDENES MUSCULOESQUELETICOS,  Y EVALUAR L POSIBILIDAD DE REALIZAR ADECUACIONES A LOS PUESTOS DE TRABAJO PARA MINIZAR EL RIESGO.  ", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "SENSIBILIZACION SOBRE AUTOCUIDADO , INSTAURAR PROGRAMA DE  PAUSAS ACTIVAS.", "tipo": "recomendados"}
         ]
     },
     { 
-        "title": "Psicosocial", 
+        "title": "psicosocial", 
         "descripcion": "", 
         "funteDelPeligro": "EXIGENCIA DE RAPIDEZ EN LAS RESPUESTAS,   RECIBE GRAN CANTIDAD DE INFORMACION (ESTIMULOS) EN FORMA DISPERSA, VARIADA, CONTINUA (APREMIO DE TIEMPO),  REQUIERE ANALISIS DE GRAN CANTIDAD DE INFORMACION EN POCO TIEMPO EN FORMA CONTINUA.", 
-        "efectos": [
+        "efectosYOcurrencia": [
             { "title": "salud", "descripcion": "ESTRÉS, FATIGA, DESMOTIVACIÓN, IRRITABILIDAD, TENSION,PORBLEMAS CARDIACOS, ULCERAS BAJO RENDIMIENTO, CEFALEA. ", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "medio", "descripcion": "NO AFECTA", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "producción", "descripcion": "GENERA CAMBIOS OPERATIVOS Y REDISEÑO TEMPORAL, BAJO DESEMPEÑO EN LA LABOR, AUMENTO EN TASA DE ASUENTISMO Y ACCIDENTALIDAD. ABANDONO DEL CARGO, FENOMENOS DE RECARGA LABORAL ", "requisitoLegal": "Boolean", "consecuencia": "Number"},
+            { "title": "produccion", "descripcion": "GENERA CAMBIOS OPERATIVOS Y REDISEÑO TEMPORAL, BAJO DESEMPEÑO EN LA LABOR, AUMENTO EN TASA DE ASUENTISMO Y ACCIDENTALIDAD. ABANDONO DEL CARGO, FENOMENOS DE RECARGA LABORAL ", "requisitoLegal": "Boolean", "consecuencia": "Number"},
             { "title": "imagen", "descripcion": "SI SOLO ES CONOCIMIENTO DE OTROS PROCESOS DE LA EMPRESA Y EL CLIENTE", "requisitoLegal": "Boolean", "consecuencia": "Number"},
-            { "title": "económico", "descripcion": "PERDIDA DE TIEMPO EFECTIVO DE TRABAJO, AL PAGAR POR INCAPACIDADES, SEGUROS, PERDIDA DE DINERO POR PARTE DEL TRABAJADOR EN TRAMITES Y TRANSPORTE DE LEGALIZACION.", "requisitoLegal": "Boolean", "consecuencia": "Number"}
+            { "title": "economico", "descripcion": "PERDIDA DE TIEMPO EFECTIVO DE TRABAJO, AL PAGAR POR INCAPACIDADES, SEGUROS, PERDIDA DE DINERO POR PARTE DEL TRABAJADOR EN TRAMITES Y TRANSPORTE DE LEGALIZACION.", "requisitoLegal": "Boolean", "consecuencia": "Number"}
         ],
         "controles": [
             { "title": "eliminacion", "descripcion": "no existe", "tipo": "existentes"},
             { "title": "sustitucion", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control de ingenieria", "descripcion": "no existe", "tipo": "existentes"},
-            { "title": "control en el medio", "descripcion": "  INTEGRACION FIN DE AÑO, AMOR Y AMISTAD, DIA DE LA MUJER Y PRIMA  EXTRALEGAL SEMANA SANTA.", "tipo": "existentes"},
+            { "title": "controlDeIngenieria", "descripcion": "no existe", "tipo": "existentes"},
+            { "title": "controlEnElMedio", "descripcion": "  INTEGRACION FIN DE AÑO, AMOR Y AMISTAD, DIA DE LA MUJER Y PRIMA  EXTRALEGAL SEMANA SANTA.", "tipo": "existentes"},
             { "title": "individuo", "descripcion": "no existe", "tipo": "existentes"},
 
             { "title": "eliminacion", "descripcion": "", "tipo": "recomendados"},
             { "title": "sustitucion", "descripcion": "", "tipo": "recomendados"},
-            { "title": "control de ingenieria", "descripcion": "IMPLEMENTAR SVE PARA RIESGO SICOLABORAL SEGÚN LO ESTIPULADO LEGALMENTE, EVALUAR, ALINEAR  Y TOMAR ACCIONES SOBRE ENCUESTAS DE CLIMA ORGANIZACIONAL GENERADAS POR CANAL DIRECTO .", "tipo": "recomendados"},
-            { "title": "control en el medio", "descripcion": "INSTAURAR PROGRAMAS DE MOTIVACION Y BIENESTAR AL PERSONAL,  REALIZAR ACTIVIDADES DEPORTIVAS Y DE INTEGRACION, MANTENER   FIESTAS DE INTEGRACION.", "tipo": "recomendados"},
+            { "title": "controlDeIngenieria", "descripcion": "IMPLEMENTAR SVE PARA RIESGO SICOLABORAL SEGÚN LO ESTIPULADO LEGALMENTE, EVALUAR, ALINEAR  Y TOMAR ACCIONES SOBRE ENCUESTAS DE CLIMA ORGANIZACIONAL GENERADAS POR CANAL DIRECTO .", "tipo": "recomendados"},
+            { "title": "controlEnElMedio", "descripcion": "INSTAURAR PROGRAMAS DE MOTIVACION Y BIENESTAR AL PERSONAL,  REALIZAR ACTIVIDADES DEPORTIVAS Y DE INTEGRACION, MANTENER   FIESTAS DE INTEGRACION.", "tipo": "recomendados"},
             { "title": "individuo", "descripcion": "DESARROLLAR ACTIVIDADES DE BIENESTAR, CAPACITACIONES E INDUCCION SOBRE EL CONTROL E LA TAREA, DESARROLLO DE ACTIVIDADES SE SENSIBILIZACION DEL REISGO, Y ACTIVIDADES DE MOTIVACIÓN Y PERMANENCIA EN LA EMPRESA.", "tipo": "recomendados"}
         ]
     }

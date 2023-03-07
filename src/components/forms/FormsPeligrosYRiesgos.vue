@@ -21,8 +21,8 @@
                 <div class="router-links" >
                     <RouterLink
                     v-for="(peligro, index) in peligros"
-                    :key="index"
-                    :to="{name: 'peligro.show', params: {peligroTipo: peligro.title }}"
+                    :key=" index"
+                    :to="{name: 'peligro.show', params: {peligroName: peligro.title }}"
                     >
 
                     <button type="button" class="btn btn-outline-primary"
@@ -33,7 +33,7 @@
                     </RouterLink>
                 </div>
                 
-                <RouterView />
+                <RouterView :key="$route.path" />
                 
             </section>
 
@@ -50,35 +50,34 @@
 
   
 <script>
-import dataForm from "@/JsonData/peligrosRiesgos.json"
 import { RouterLink, RouterView } from "vue-router"
 import { mapState } from 'vuex'
 
 export default {
-    async mounted() {
-        this.$store.state.forms.data = await dataForm;
+    methods:{
+        // maybe consider the comment solution / <RouterView :key="$route.path" />
+        // async
+        initData(){
+            this.$store.dispatch('setData')
+            //await
+            this.peligroSelected = this.$route.params.peligroName
+        }
+    },
+    //async
+    created() {
+        this.initData()
+        // this.$watch( () => this.$route.params, this.initData )
     },
     data() {
         return {
             formData: {},
-            searchCargo: "",
-            cargos: ["Gerente", "Asesor comercial", "Auxiliar administrativo", "Administrador", "Logistica", "Guardas de seguridad", "Jefe servicio cliente", "Aux de cartera", "Operador vehiculo", "Asitente nomina"],
-            peligroSelected: "Mecanico",
+            peligroSelected: '',
         };
-    },
-    methods: {
-        assingCargo(cargo) {
-            this.searchCargo = cargo;
-        }
     },
     computed: {
         ...mapState({
             peligros: state => state.forms.data,
         }),
-        cargosInSearch() {
-            const cargos = this.cargos.map(cargo => cargo.toLowerCase());
-            return cargos.filter(cargo => cargo.includes(this.searchCargo.toLowerCase()));
-        }
     },
     components: { RouterView, RouterLink }
 }

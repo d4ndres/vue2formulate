@@ -1,6 +1,6 @@
 <template>
 <article v-if="peligro" class="peligro">
-    <h3 class="text-secondary fs-3"> {{ peligroTipo }} </h3>
+    <h3 class="text-secondary fs-3"> {{ peligroName }} </h3>
     <div class="info">
         <div v-if="peligro.descripcion">
             <p><strong>Descripcion</strong></p>
@@ -11,24 +11,23 @@
             <p>{{ sanitizeString( peligro.funteDelPeligro) }}</p>
         </div>
     </div>
-    <FormulateForm  name="peligroYEfectosData" @submit.prevent v-model="peligroYEfectosData">
-        <h3 class="text-secondary fs-4">Efectos</h3>
-        <div class="efecto" v-for="efecto in efectos" :key="efecto.title">
-            <!-- <div class="efecto-inter-nav">
-                <div class="nav-previous">/\</div>
-                <div class="nav-next">\/</div>
-            </div> -->
+    <FormulateForm  name="efectosYOcurrenciaAsObject" v-model="efectosYOcurrenciaAsObject">
+        <h3 class="text-secondary fs-4">Efectos y concurrencia</h3>
+        <div class="efecto" v-for="efecto in efectosYOcurrencia" :key="efecto.title">
+            <!-- maybe scroll smooth  -->
             <div class="efecto-body">
                 <h4 class="text-secondary f5">{{ sanitizeString(efecto.title) }}</h4>
                 <div class="wrapper-radio-flex">
                     <FormulateInput :name="`${efecto.title}RequisitoLegal`" :options="{ si: 'Si', no: 'No'}" type="radio" label="Es requisito legal" value="si" />
                 </div>
-                <FormulateInput :name="`${efecto.title}Consecuencia`" type="number" min="1" max="6" label="Consecuencia" />
+                <FormulateInput :value="1" :name="`${efecto.title}Consecuencia`" type="number" min="1" max="6" label="Consecuencia" />
                 <FormulateInput :name="`${efecto.title}Descripcion`" type="textarea" label="Descripción" :value="sanitizeString( efecto.descripcion )" />
             </div>
         </div>
-
-        <!-- <code class="code code--block">{{ peligroYEfectosData }}</code> -->
+        <div class="input-agregar ">
+            <FormulateInput type="submit" label="siguiente efecto" @click="siguiente" />
+        </div>
+        <code class="code code--block">{{ efectosYOcurrenciaAsObject }}</code>
     </FormulateForm>
 
     <FormulateForm  name="controlesData" @submit.prevent v-model="controlesData">
@@ -63,6 +62,7 @@
         </div>
 
         <!-- <code class="code code--block">{{ controlesData }}</code> -->
+
     </FormulateForm>
 
 </article>
@@ -78,35 +78,32 @@ import {
 export default {
     name: 'AboutTipoPeligro',
     props: {
-        peligroTipo: {
+        peligroName: {
             type: String,
             required: true
         }
     },
     data() {
         return {
-            peligroYEfectosData: {},
+            efectosYOcurrenciaAsObject: {},
             controlesData: {},
             nuevoControl: {},
-            aux: null
+            peligro: null
         }
     },
     mounted(){
-        
-        this.$store.dispatch('fetchProducts')
+        this.initData()
+        // console.log(this.peligro);
     },
+    // watch: {
+    //     efectosYOcurrenciaAsObject(newValue) {
+    //         console.log( newValue);
+    //     }
+    // },
     computed: {
-        peligro() {
-            try {
-                const peligro = this.$store.getters.getData.filter(item => item.title.toLowerCase() == this.peligroTipo.toLowerCase())[0]
-                return peligro
-            } catch {
-                return null
-            }
 
-        },
-        efectos() {
-            return this.peligro.efectos
+        efectosYOcurrencia() {
+            return this.peligro.efectosYOcurrencia
         },
         controles() {
             return this.peligro.controles
@@ -121,6 +118,9 @@ export default {
         ...mapGetters(['sanitizeString'])
     },
     methods: {
+        initData(){
+            this.peligro = this.$store.state.forms.data.find( item => item.title == this.peligroName);
+        },
         agregarCnotrol() {
             // const index = this.controles.findIndex( control => {
             //     return control.title.toLowerCase() == this.nuevoControl.title.toLowerCase()
@@ -133,8 +133,37 @@ export default {
             const name = `${this.recomendado.tipo}${this.recomendado.title}`
             nuevoControl[name] = this.nuevoControl.descripcion
             Object.assign({}, this.controlesData, {})
+        },
+        siguiente() {
+            let data = []
+            for( let subObj of this.peligro.efectosYOcurrencia ){
+                let subData = {}
+ 
+                for( let key of Object.keys( subObj ) ) {
+                    if( key == 'title') {
+                        subData[key] = subObj[key]
+                        continue
+                    }
+                    const keyAsObject = subObj.title+key.substring(0,1).toUpperCase()+key.substring(1,key.length)
+                    subData[keyAsObject] = this.efectosYOcurrenciaAsObject[keyAsObject] 
+                    
+                }
+                data.push( subData )
+            }
+            
+            let updatePeligro = {
+                peligroName: this.peligroName,
+                data: data,
+                title: 'efectosYOcurrencia'
+            }
+
+            this.$store.dispatch('updateData', updatePeligro )
+
+            // this.$store.state.forms.data[0].efectosYOcurrencia = data
+            // console.log(this.$store.state.forms.data[0]);
+
         }
-    }
+    },
 
 }
 </script>

@@ -15,7 +15,7 @@ const formRotes = [
         name: 'formPeligrosYRiesgos',
         component: FormsPeligrosYRiesgos,
         children:[{
-            path: ':peligroTipo',
+            path: ':peligroName',
             name: 'peligro.show',
             component: () => import('@/components/forms/AboutTipoPeligro.vue'),
             props: true

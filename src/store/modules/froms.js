@@ -1,4 +1,4 @@
-import peligrosRiesgos from '@/JsonData/peligrosRiesgosx.json'
+import peligrosRiesgos from '@/JsonData/peligrosRiesgos.json'
 
 export default {
     state: {
@@ -18,12 +18,20 @@ export default {
     mutations: {
         setData( state, data ){
             state.data = data
+        },
+        updateData( state, { data, index}){
+
+            state.data[index]['efectosYOcurrencia'] = data
         }
     },
     actions: {
-        setData( {commit}, data ){
-            commit('setData', data)
+        setData( {commit} ){
+            commit('setData', peligrosRiesgos)
         },
+        updateData( { state, commit }, peligro ){
+            peligro['index'] = state.data.findIndex( item => item.title == peligro.peligroName )
+            commit('updateData', peligro)
+        }
 
     }
 };

@@ -23,7 +23,7 @@
             { "title": "individuo", "descripcion": "ESTIMULAR  REPORTE  DE CONDICIONES DE PELIGRO Y EL CONTROL DE ACTOS INSEGUROS.", "tipo": "recomendados"}
         ]
     },
-    "Electrico": {
+    "electrico": {
         "descripcion": "Descrgas electricas de baja tension", 
         "funteDelPeligro": "Baja tension, Conexiones electricas", 
         "efectos": [
@@ -71,7 +71,7 @@
             { "title": "individuo", "descripcion": "PROGRAMA DE CAPACITACION Y SENSIBILIZACION AL RIESGO , FORTALECIMIENTO HABITOS DE ORDEN Y LIMPIEZA, SENSIBILIZAR AL TRABJADOR EN EL REPORTE DE SITUACIONES DE PELIGRO.", "tipo": "recomendados"}
         ]
     },
-    "AntropicoODeOrdenSublico": {
+    "antropicoODeOrdenPublico": {
         "descripcion": "Agresiones fisicas,  atraco - robos, secuestro, extorsiones, fleteo", 
         "funteDelPeligro": "Transporte por diferentes zonas de la ciudad ( reuniones laborales), condiciones de seguridad por orden público, atracos, robos, secuestros, accidentes  de transito, conflictos con personal de trabajo y clientes", 
         "efectos": [
